@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/  file:///usr/share/openbox/menu.xsd">
+  <menu id="root-menu" title="Menu" label="Openbox 3">
+	<separator label="Main Menu"/>
+	<item label="Run A Program">
+		<action name="Execute">
+				<execute>rmenu_wi_alt</execute>
+		</action>
+	</item>
+	<menu id="root-menu-67226" label="Rus As Root (#)">
+		<item label="File Manager As Root">
+			<action name="Execute">
+				<execute>gksu thunar</execute>
+				</action>
+		</item>
+		<item label="Text Editor As Root">
+			<action name="Execute">
+				<execute>gksu geany</execute>
+			</action>
+		</item>
+		<item label="Terminal As Root">
+			<action name="Execute">
+				<execute>gksu xfce4-terminal</execute>
+			</action>
+		</item>
+		<item label="Run Program As Root">
+			<action name="Execute">
+				<execute>gksu</execute>
+			</action>
+		</item>
+	</menu>
+	<separator/>
+		<item label="Terminal">
+			<action name="Execute">
+				<command>exo-open --launch TerminalEmulator</command>
+			</action>
+		</item>
+		<item label="Web Browser">
+			<action name="Execute">
+				<command>exo-open --launch WebBrowser</command>
+			</action>
+		</item>
+		<item label="File Manager">
+			<action name="Execute">
+				<command>exo-open --launch FileManager</command>
+			</action>
+		</item>
+		<item label="Text Editor">
+			<action name="Execute">
+				<command>geany</command>
+			</action>
+		</item>
+		<separator/>
+		<menu execute="obmenu-generator" id="pipe-714053" label="Applications"/>
+		<menu id="root-menu-8365" label="Screenshot">
+			<item label="Screenshot Now">
+				<action name="Execute">
+					<execute>s0</execute>
+				</action>
+			</item>
+			<item label="Screenshot In 5">
+				<action name="Execute">
+					<execute>s5</execute>
+				</action>
+			</item>
+			<item label="Screenshot In 10">
+				<action name="Execute">
+					<execute>s10</execute>
+				</action>
+			</item>
+			<item label="Screenshot Area">
+				<action name="Execute">
+					<execute>sA</execute>
+				</action>
+			</item>
+			<item label="Screenshot Window">
+				<action name="Execute">
+					<execute>sW</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu execute="ob-places-pipemenu --recent ~/" id="pipe-placesmenu" label="Places"/>
+		<menu execute="ob-recent-files-pipemenu" id="pipe-164328" label="Recent Files"/>
+		<menu execute="ob_clipboard_pipe_menu.py" id="pipe-424146" label="Clipboard"/>
+		<separator/>
+		<menu id="preferences" label="Preferences">
+			<menu id="obConfig" label="Openbox">
+				<item label="Settings GUI">
+					<action name="Execute">
+						<command>obconf</command>
+					</action>
+				</item>
+				<item label="Menu GUI">
+					<action name="Execute">
+						<command>obmenu</command>
+					</action>
+				</item>
+				<separator/>
+				<item label="Edit menu.xml">
+					<action name="Execute">
+						<command>exo-open ~/.config/openbox/menu.xml</command>
+					</action>
+				</item>
+				<item label="Edit rc.xml">
+					<action name="Execute">
+						<command>exo-open ~/.config/openbox/rc.xml</command>
+					</action>
+				</item>
+				<item label="Edit autostart">
+					<action name="Execute">
+						<command>exo-open ~/.config/openbox/autostart</command>
+					</action>
+				</item>
+				<separator/>
+				<item label="Openbox Reconfigure">
+					<action name="Reconfigure"/>
+				</item>
+				<item label="Openbox Restart">
+					<action name="Restart"/>
+				</item>
+			</menu>
+			<menu execute="ob-compositor" id="CompositingPipeMenu" label="Compton"/>
+			<menu execute="ob-conky-pipemenu" id="ConkyPipeMenu" label="Conky"/>
+			<menu execute="ob-polybar-pipemenu" id="PolybarPipeMenu" label="Polybar"/>
+			<menu execute="ob-tint2-pipemenu" id="TintPipeMenu" label="Tint2"/>
+			<separator/>
+			<item label="Wallpaper/Background">
+				<action name="Execute">
+					<command>nitrogen</command>
+				</action>
+			</item>
+			<item label="Appearance Settings">
+				<action name="Execute">
+					<command>xfce4-appearance-settings</command>
+				</action>
+			</item>
+			<separator/>
+			<item label="Power Settings">
+				<action name="Execute">
+					<command>xfce4-power-manager</command>
+				</action>
+			</item>
+			<item label="Audio Settings">
+				<action name="Execute">
+					<command>pavucontrol</command>
+				</action>
+			</item>
+			<item label="Settings Manager">
+				<action name="Execute">
+					<command>xfce4-settings-manager</command>
+				</action>
+			</item>
+		</menu>
+		<menu execute="ob-help-pipemenu" id="help" label="Help and Info"/>
+		<menu execute="ob-kb-pipemenu" id="keybinds" label="Keybinds"/>
+		<separator/>
+		<item label="Lock Screen">
+			<action name="Execute">
+				<command>i3lock-fancy -p</command>
+			</action>
+		</item>
+		<item label="Exit Openbox">
+			<action name="Execute">
+				<command>pmenu_alt</command>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>
+<!-- vim:sw=2
+-->

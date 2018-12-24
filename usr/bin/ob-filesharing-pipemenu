@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+# A pipemenu base script/template for creating category based pipemenus
+# written by Nathaniel Maia, December 2017 for ArchLabs
+
+# Add something like this to your menu.xml
+# <menu execute="SCRIPTNAME" id="NAME" label="PNAME"/>
+
+NAME="filesharing"
+PNAME="File Sharing"
+FAIL_MSG="No Apps Installed"
+
+CMD=(deluge dropbox nicotine soulseekqt transmission-gtk qbittorrent filezilla)
+DESC=(Deluge DropBox "Nicotine+" Soulseek Transmission qBittorrent Filezilla)
+
+if ! . "/usr/lib/archlabs/common/al-include.cfg" 2>/dev/null; then
+    echo -e "[ERROR]: Failed to source /usr/lib/archlabs/common/al-include.cfg"
+    exit 1
+fi
+
+terms=(st termite urxvt terminator xfce4-terminal xterm)
+for term in "${terms[@]}"; do
+    if hash $term &>/dev/null; then
+        termcmd="$term"
+        break
+    fi
+done
+
+menu_Body() {
+    for ((i=0; i<${#CMD[@]}; i++)); do
+        if hash "${CMD[$i]}" &>/dev/null; then
+            menuItem "${DESC[$i]}" "${CMD[$i]}"
+        fi
+    done
+}
+
+inst_Body() {
+    for ((i=0; i<${#CMD[@]}; i++)); do
+        [[ ${CMD[$i]} == "nicotine" ]] && cmd="${CMD[$i]}+" || cmd="${CMD[$i]}"
+        menuItem "Install ${DESC[$i]}" "$termcmd -e 'aurman -S $cmd'"
+    done
+}
+
+menuStart "$NAME" "$PNAME"
+for x in "${CMD[@]}"; do
+    if hash "$x" &>/dev/null; then
+        num=1 ; break
+    fi
+done
+if [[ $num -gt 0 ]]; then
+    menu_Body
+else
+    menuSeparator "$FAIL_MSG"
+    inst_Body
+fi
+menuEnd
+
+exit 0

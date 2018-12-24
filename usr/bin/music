@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Start urxvt with album art config
+# Execute 'my-music' from dmenu
+
+urxvt -g 74x14 -e bash -c "ncmpcpp -c ~/.ncmpcpp/config-art"

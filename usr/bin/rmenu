@@ -1,0 +1,5 @@
+#!/bin/bash
+
+## Created By Aditya Shakya
+
+rofi -modi run,drun -show drun -location 7 -yoffset -50 -xoffset 15 -line-padding 4 -columns 1 -width 25 -padding 25 -hide-scrollbar -show-icons -drun-icon-theme "Papirus" -font "Iosevka 10"

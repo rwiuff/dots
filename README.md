@@ -13,7 +13,8 @@ Here's a list of programs You may need... <br />
 - Image viewer - Feh, Viewnior, Gpicview, Ristretto, Or Any Other <br />
 - Terminal - Termite, rxvt-unicode-pixbuf, xfce4-terminal Or Any Other <br />
 - File Manager - Thunar, PCManFM, Ranger, MC, Or Any Other <br />
-- Etc... <br />
+- Media - Mpd, Mpc, Ncmpcpp, Mplayer, Or Any Other <br />
+- Etc ... Just Giving You An Idea <br />
 
 ## 1. Blues
 

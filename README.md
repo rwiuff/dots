@@ -1,7 +1,19 @@
 ![logo](https://raw.githubusercontent.com/adi1090x/dots/master/images/dots.png) <br />
 
 In this repository, I'm going to share a complete set of configuration files for linux customization. <br />
-There's a ***bin*** directory in this repo, which contain some scripts which are used in the config files to launch menus, notifications, etc. & a ***fonts*** directory which contains specific fonts for glyphs used in polybar, scripts etc. <be />
+There's a ***bin*** directory in this repo, which contain some scripts which are used in the config files to launch menus, notifications, etc. & a ***fonts*** directory which contains specific fonts for glyphs used in polybar, scripts etc. <br />
+
+## Programs
+
+Here's a list of programs You may need... <br />
+
+- A Window Manager - i3wm, openbox, awesome, bspwm, Or Any Other <br /> 
+- A Bar - Polybar, Tint2, Lemonbar, Or Any Other <br />
+- Rofi - For Menu, Applets, etc <br />
+- Image viewer - Feh, Viewnior, Gpicview, Ristretto, Or Any Other <br />
+- Terminal - Termite, rxvt-unicode-pixbuf, xfce4-terminal Or Any Other <br />
+- File Manager - Thunar, PCManFM, Ranger, MC, Or Any Other <br />
+- Etc... <br />
 
 ## 1. Blues
 

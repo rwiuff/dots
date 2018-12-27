@@ -33,3 +33,21 @@ Openbox Desktop with polybar, rofi, termite, urxvt, etc.
 ***Dots*** For Rofi Menu, Networkmanager_dmenu, Power Menu.
 
 ![blues_alt](https://raw.githubusercontent.com/adi1090x/dots/master/images/blues_alt.png) <br />
+
+## 2. leafs
+
+Another Openbox Desktop with polybar, rofi, termite, urxvt, etc.
+
+**Appearance Overview**
+
+- Gtk Theme : [leaf](https://github.com/adi1090x/dots/tree/master/leafs/.themes) <br />
+- Icon Pack : [leaf](https://github.com/adi1090x/dots/tree/master/leafs/.icons) <br />
+- Bars : [Polybar](https://github.com/jaagr/polybar) <br />
+- Fonts : [Fantasque](https://github.com/belluzj/fantasque-sans) & [Material Icons](https://github.com/google/material-design-icons/blob/master/iconfont/MaterialIcons-Regular.ttf) <br />
+- Wallpaper : [leafs](https://github.com/adi1090x/dots/tree/master/leafs/wallpaper.jpg) <br />
+
+![leafs](https://raw.githubusercontent.com/adi1090x/dots/master/images/leafs.png) <br />
+
+***Another*** : thunar, mpd/ncmpcpp
+
+![leafs_alt](https://raw.githubusercontent.com/adi1090x/dots/master/images/leafs_alt.png) <br />

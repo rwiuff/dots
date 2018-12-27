@@ -34,7 +34,7 @@ Openbox Desktop with polybar, rofi, termite, urxvt, etc.
 
 ![blues_alt](https://raw.githubusercontent.com/adi1090x/dots/master/images/blues_alt.png) <br />
 
-## 2. leafs
+## 2. Leafs
 
 Another Openbox Desktop with polybar, rofi, termite, urxvt, etc.
 

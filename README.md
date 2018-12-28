@@ -28,9 +28,9 @@ Openbox Desktop with polybar, rofi, termite, urxvt, etc.
 - Fonts : [Iosevka](https://github.com/be5invis/Iosevka) & [Icomoon](https://icomoon.io/icons-icomoon.html) <br />
 - Wallpaper : [blues](https://github.com/adi1090x/dots/tree/master/blues/wallpaper.jpg) <br />
 
-![blues](https://raw.githubusercontent.com/adi1090x/dots/master/images/blues.png) <br />
+### Screenshots
 
-***Dots*** For Rofi Menu, Networkmanager_dmenu, Power Menu.
+![blues](https://raw.githubusercontent.com/adi1090x/dots/master/images/blues.png) <br />
 
 ![blues_alt](https://raw.githubusercontent.com/adi1090x/dots/master/images/blues_alt.png) <br />
 
@@ -46,8 +46,10 @@ Another Openbox Desktop with polybar, rofi, termite, urxvt, etc.
 - Fonts : [Fantasque](https://github.com/belluzj/fantasque-sans) & [Material Icons](https://github.com/google/material-design-icons/blob/master/iconfont/MaterialIcons-Regular.ttf) <br />
 - Wallpaper : [leafs](https://github.com/adi1090x/dots/tree/master/leafs/wallpaper.jpg) <br />
 
+### Screenshots
 ![leafs](https://raw.githubusercontent.com/adi1090x/dots/master/images/leafs.png) <br />
 
-***Another*** : thunar, mpd/ncmpcpp
-
 ![leafs_alt](https://raw.githubusercontent.com/adi1090x/dots/master/images/leafs_alt.png) <br />
+
+![leafs_alt_1](https://raw.githubusercontent.com/adi1090x/dots/master/images/leafs_alt_1.png) <br />
+

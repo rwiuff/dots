@@ -1,0 +1,95 @@
+! ***** Created by Aditya Shakya *****
+
+! ***** MAIN *****
+
+*button.pressed.appearance: flat solid
+*button.pressed.backgroundColor: white
+
+*font: Misc Termsyn-12
+
+*borderColor: IndianRed2
+*borderWidth: 2
+*marginWidth: 2
+
+! ***** Menu *****
+
+menu.title.appearance: flat solid border
+!menu.title.borderColor: black
+menu.title.backgroundColor: IndianRed2
+menu.title.foregroundColor: white
+menu.title.textColor: white
+menu.title.alignment: center
+menu.title.font: Misc Termsyn-12:style=Bold
+
+menu.frame.appearance: raised gradient border
+!menu.frame.borderColor: black
+menu.frame.textColor: grey20
+menu.frame.foregroundColor: grey20
+menu.frame.disabledColor: darkgrey
+menu.frame.alignment: left
+
+menu.active.appearance: flat solid border
+menu.active.borderColor: white
+menu.active.backgroundColor: white
+menu.active.foregroundColor: IndianRed2
+menu.active.textColor: IndianRed2
+
+! ***** Background *****
+
+!rootCommand: bsetroot -solid rgb:aa/aa/aa
+rootCommand: Esetroot ~/.blackbox/backgrounds/momoji.jpg
+
+! ***** Slit *****
+
+slit.appearance: raised solid
+slit.backgroundColor: rgb:aa/aa/aa
+slit.marginWidth: 3
+
+! ***** Toolbar *****
+
+toolbar.appearance: flat solid border
+toolbar.alignment: center
+toolbar*textColor: grey20
+toolbar.label.appearance: parentrelative
+toolbar.clock.appearance: parentrelative
+toolbar.windowLabel.appearance: parentrelative
+
+! ***** Window *****
+
+window.title.focus.appearance: flat solid border
+window.title.focus.color: IndianRed2
+window.title.unfocus.appearance: flat solid border
+window.title.unfocus.color: white
+window.title.unfocus.borderColor: white
+
+window.label.focus.appearance: parentrelative
+window.label.focus.textColor: white
+window.label.unfocus.appearance: parentrelative
+window.label.unfocus.textColor: grey50
+window.label.marginWidth: 1
+
+window.frame.unfocus.borderColor: white
+
+window.button.focus.appearance: parentrelative
+window.button.focus.foregroundColor: IndianRed2
+
+window.button.unfocus.appearance: parentrelative
+window.button.unfocus.foregroundColor: white
+
+window.handle.focus.appearance: flat solid
+window.handle.focus.color: IndianRed2
+window.handle.unfocus.appearance: flat solid
+window.handle.unfocus.color: white
+window.handle.unfocus.borderColor: white
+
+window.grip.focus.appearance: flat solid
+window.grip.focus.backgroundColor: IndianRed2
+window.grip.unfocus.appearance: flat solid
+window.grip.unfocus.backgroundColor: white
+window.grip.unfocus.borderColor: white
+
+window*alignment: center
+window.font: Misc Termsyn-12:style=Bold
+window.handleHeight: 2
+
+! ***** EOF *****

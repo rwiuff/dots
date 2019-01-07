@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BlackBox
+Comment=Highly configurable and low resource X11 Window manager
+Exec=~/.bbstartup.sh
+Terminal=False
+TryExec=~/.bbstartup.sh
+Type=Application

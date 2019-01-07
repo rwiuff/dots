@@ -1,0 +1,105 @@
+# This is the default menu file for Blackbox 0.33.0 and up
+# 
+# Lines beginning with the '#' character are ignored.
+#
+# The new syntax is simpler than the old X resource format...
+# Each menu item consists of 2 or 3 fields:
+#
+#	[command]  (label)  {data}
+#
+# where [command] is one of:
+#
+#   [begin] [end] [exec] [exit] [reconfig] [restart] [submenu] 
+#   [style] [stylesdir] [include] [workspaces] [config]
+#
+# [begin] is used for the top level menu
+# [submenu] is used for submenus
+# [end] must be used with BOTH [begin] and [submenu] to tell the parser to stop
+#   reading from the file.
+#
+# [exec] (label) {string}
+# This will insert an item that runs a program.
+#
+# [exit] (label)
+# This will insert an item that exits the window manager.
+#
+# [reconfig] (label) {string}
+# This will insert an item that tells blackbox to re-read it's configuration
+#  files.  {string} is optional, and if supplied, will execute the string with
+#  /bin/sh -c before the reconfiguration is performed.  (this is helpful for
+#  writing multiple config files and switching between them)
+#
+# [restart] (label) {string}
+# This will insert an item to restart the window manager.  {string} is
+# optional, and if omitted, blackbox will restart itself.  If {string} is
+# specified, then a different window manager will be started.
+#
+# [style] (filename)
+# This will insert an item to reconfigure blackbox with the new style. This
+# change is saved when blackbox exits or restarts.
+#
+# [include] (filename)
+# This will read more menu items from the file "filename".  The file cannot
+# contain a [begin] or [end], except for the [end] needed for submenus.
+#
+# [workspaces] (label)
+# This tells Blackbox to insert a "link" to the workspaces menu directly
+# into your menu.
+#
+# [config] (label)
+# This tells Blackbox to insert the ConfigMenu into your menu.  The ConfigMenu
+# allows you to change several options found in your ~/.blackboxrc file on the
+# fly.
+#
+
+## Created By Aditya Shakya
+
+[begin] (Main Menu)
+  [exec] (Run A Program)	{rmenu_wi_alt}
+  [submenu] (Run As Root)
+    [exec] (File Manager As Root)	{gksu thunar}
+    [exec] (Text Editor As Root)	{gksu geany}
+    [exec] (Terminal As Root)	{gksu termite}
+    [exec] (Run Program As Root)	{gksudo}
+   [end]
+
+  [submenu] (Terminals)
+    [exec] (Termite)	{termite}
+    [exec] (Urxvt)	{urxvt}
+    [exec] (Xfce-terminal)	{xfce4-terminal}
+    [exec] (Xterm)	{xterm -ls}
+   [end]
+
+  [exec] (Web Browser)	{exo-open --launch WebBrowser}
+  [exec] (File Manager)	{exo-open --launch FileManager}
+  [exec] (Text Editor)	{geany}
+
+  [submenu] (Screenshot)
+    [exec] (Screenshot Now)	{s0}
+    [exec] (Screenshot In 5)	{s5}
+    [exec] (Screenshot In 10)	{s10}
+    [exec] (Screenshot Area)	{sA}
+    [exec] (Screenshot Window)	{sW}
+  [end]
+
+  [submenu] (Styles) {Choose a style...}
+  [submenu] (Global)
+    [stylesdir] (/usr/share/blackbox/styles)
+  [end]
+  [submenu] (Local)
+    [stylesdir] (~/.blackbox/styles)
+  [end]
+  [end]
+
+  [workspaces] (Workspace List)
+  [config] (Configuration)
+
+  [reconfig] (Reconfigure)
+  [restart] (Restart)
+  
+  [exec] (Lock) {i3lock-fancy -p}
+  [exit] (Exit)
+[end]
+
+# End of example menu.
+

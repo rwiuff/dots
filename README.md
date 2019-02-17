@@ -74,4 +74,28 @@ Blackbox WM, Polybar, rofi, urxvt, etc.
 
 ![bbox_3](https://raw.githubusercontent.com/adi1090x/dots/master/images/bbox_3.png) <br />
 
+## 4. Wall
 
+Openbox WM, Polybar, rofi, urxvt, etc.
+
+
+**Appearance Overview**
+
+- Gtk Theme : [Wall](https://github.com/adi1090x/dots/tree/master/wall/.themes) <br />
+- Icon Pack : [Oomox](https://github.com/adi1090x/dots/tree/master/wall/.config/oomox) <br />
+- Bars : [Polybar](https://github.com/jaagr/polybar) <br />
+- Fonts : [Icomoon-Feather](https://github.com/adi1090x/dots/tree/master/wall/fonts) & [Ubuntu Condensed](https://github.com/adi1090x/dots/tree/master/wall/fonts) <br />
+- Wallpaper : [Wall](https://github.com/adi1090x/dots/tree/master/wall/wallpaper.png) <br />
+
+### Screenshots
+![wall_1](https://raw.githubusercontent.com/adi1090x/dots/master/images/wall_1.png) <br />
+
+![wall_2](https://raw.githubusercontent.com/adi1090x/dots/master/images/wall_3.png) <br />
+
+![wall_3](https://raw.githubusercontent.com/adi1090x/dots/master/images/wall_3.png) <br />
+
+![wall_4](https://raw.githubusercontent.com/adi1090x/dots/master/images/wall_4.png) <br />
+
+![wall_5](https://raw.githubusercontent.com/adi1090x/dots/master/images/wall_5.png) <br />
+
+![wall_6](https://raw.githubusercontent.com/adi1090x/dots/master/images/wall_6.png) <br />

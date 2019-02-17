@@ -90,7 +90,7 @@ Openbox WM, Polybar, rofi, urxvt, etc.
 ### Screenshots
 ![wall_1](https://raw.githubusercontent.com/adi1090x/dots/master/images/wall_1.png) <br />
 
-![wall_2](https://raw.githubusercontent.com/adi1090x/dots/master/images/wall_3.png) <br />
+![wall_2](https://raw.githubusercontent.com/adi1090x/dots/master/images/wall_2.png) <br />
 
 ![wall_3](https://raw.githubusercontent.com/adi1090x/dots/master/images/wall_3.png) <br />
 
